@@ -5,7 +5,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Portfolio</title>
-		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="/css/style.css" />
+		<link rel="stylesheet" href="/css/queries.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -16,9 +17,10 @@
 
 	<body>
 		<header class="l-header">
-			<nav class="nav bd-grid">
-				<div>
-					<a href="#" class="nav__logo">Radoslaw Macioszek</a>
+			<nav class="nav">
+				<div class="bd-flex">
+					<img src="/img/twarz.jpg" class="nav__face"/>
+					<a href="#" class="nav__logo">Radosław Macioszek</a>
 				</div>
 
 				<div class="nav__menu" id="nav-menu">
@@ -48,12 +50,13 @@
       <section >
         <div class="intro" >
           <div class="home" id="home">
-            <div class="home__text-container">
+          <div class="home__text-container">
               <h1 class="home__text">Cześć!</h1>
               <p class="home__paragraph">
-                Nazywam się Radosław Macioszek, jestem początkującym programistą,
+                Nazywam się <span class="home__name">Radosław Macioszek</span>, jestem początkującym programistą,
                 który chciałby postawić swoje pierwsze kroki w świecie IT.
               </p>
+						
 					</div>
 					<div class="home__img-container">
             <img src="./img/twarz.jpg" alt="profile photo" class="home__img" />
@@ -61,45 +64,43 @@
 				</div>
       </section>
 
-      <section >
+      <section id="about">
         <div class="about__container" >
-          <h2 class="about" id="about">O mnie</h2>
+          <h2 class="about" >O mnie</h2>
 					<div class="about__paragraphs">
             <p class="about__paragraph paragraph--1">
-              Swoją pierwsza styczność z programowaniem miałem już ponad trzy
-							lata temu, kiedy to podczas wspólnego podróżowania wraz z bratem
-							po świecie, zacząłem w wolnych chwilach zagłębiać się również w
-							świat IT. Na tamtym etapie, była to jednak nauka dla samego siebie, niż z zamiaru wiązania z tym przyszłości.
+              Swoją pierwsza styczność z programowaniem miałem ponad trzy
+							lata temu, kiedy to podczas wspólnego podróżowania
+							po świecie z bratem, zacząłem w wolnych chwilach zagłębiać się także w
+							świat IT.
 							<br />
 							<br />
-							Naukę przerwałem po paru miesiącach (6-7), ze względu na wybuch
-							pandemii (COVID-19), który całkowicie zmienił moje życie,
-							uniemożliwiając utrzymywanie jego ówczesnego trybu, oraz wymusił podjęcie innej pracy i
-							przenosiny na stałe do Belgii.
+							Nauka została niestety przerwana po paru miesiącach (6-7), kiedy to ze względu na wybuch
+							pandemii (COVID-19), zmuszony byłem zmienić swoje plany i wyjechać na stałę do Belgii.
+							Praca jako shift leader oraz technik na
+							magazynie automatycznym, w miedzynarodowym środowisku, pozwoliła mi m.in. podszkolić swój język, oraz nauczyć się dużej odpowiedzialności i samodzielności w wykonywanych działaniach, a także pod presją czasu.
+													
 						</p>
 						<p class="about__paragraph paragraph--2">
-              Przepracowawszy prawie 2 lata jako shift leader oraz technik na
-							magazynie automatycznym, zmiana zawodu stała się moim głównym
-							celem na zawodowej drodze życia i to wtedy postanowiłem, że będę poświęcać ponownie
-							większość wolnego czasu na rozwój oraz zdobywanie nowych
-							umiejętności, tak aby w przyszłości zostać dobrym programistą.
+							Po przepracowaniu prawie 2 lat, zmiana zawodu stała się jednak moim głównym
+							celem na zawodowej drodze życia i to wtedy postanowiłem, że każdą kolejną wolną chwilę poświęcać będę na rozwój oraz pozostanie jak najlepszym programistą.	
 							<br />
 							<br />
-							Zgłębianie wiedzy rozpocząłem od nauki i poznania Frontendu -
-							<span class="bold__text">HTML, CSS, JS, REACT</span> - jednak w razie potrzeby, chętnie nauczę się
-							również innych języków programowania. Wiedzę zdobywałem głównie z
-							kursów na platformie udemy, książek, dokumentacji i poszukiwań w
-							internecie, ale również ze studiów podyplomowych, rozpoczętych w
+							Zgłębianie wiedzy rozpocząłem od nauki Frontendu - <span class="bold__text">HTML, CSS, JS, REACT</span> - jednak z czasem, bądź w razie potrzeby, chętnie nauczę się również innych języków programowania. 
+							<br />
+							<br />
+							Wiedzę zdobywałem głównie z kursów na platformie udemy, książek, dokumentacji i poszukiwań w internecie, ale również ze studiów podyplomowych, rozpoczętych w
 							marcu tego roku w Akademii Leona Koźmińskiego na kierunku Frontend
 							Development z React – Online.
 							<br/>
 							<br>
+
 						</p>
 						<p class="about__paragraph paragraph--3">
-              Możliwość podjęcia współpracy z Państwa firmą, byłaby dla mnie nie
+							Możliwość podjęcia współpracy z Państwa firmą, byłaby dla mnie nie
 							tylko wyróżnieniem, ale również świetną okazją do zastosowania
-							nabytej wiedzy w praktyce, a takze kontynuowania nauki już nie
-							tylko w wolnych chwilach, ale również i w pracy, pod okiem
+							nabytej wiedzy w praktyce, a także kontynuowania nauki już nie
+							tylko w wolnych chwilach, ale również pod okiem
 							bardziej doświadczonych programistów.
 							<br />
 							<br>
@@ -107,104 +108,116 @@
 							że przy odpowiedniej determinacji i właściwemu treningowi, można
 							nauczyć się wszystkiego. Dlatego mam głęboką nadzieję, że uda mi
 							się otrzymać od Państwa szansę i możliwość wykazania się, gdyż ani
-							determinacji, ani chęci do nauki mi nie brakuje. Jestem bardzo
-							zainteresowany podjęciem współpracy z państwa firmą.
+							determinacji, ani chęci do nauki mi nie brakuje.
 						</p>
 					</div>
 				</div>
       </section>
 
         <div class="jobTitleContainer upper " >
-          <h2 class="jobTitle">Aspirujący programista</h2>
+          <h2 class="jobTitle">Junior Frontend developer</h2>
 				</div>
         
-				<section class="skills section" id="skills">
+				<section class="section-skills" id="skills">
           <div class="skills__container bd-grid">
-            <div class="skills__padding">
-              <h2 class="skills__subtitle">Edukacja</h2>
-							<ul class="skills__courses">
-                <li class="course mbsmall">
-                  <span class="course__date">03/2022 - Obecnie</span>
-									Studia podyplomowe, Akademia Leona Koźmińskiego,
-									<br />Frontend Development z React - Online,
-								</li>
-								<li class="course mbsmall">
-                  <span class="course__date">10/2012 - 07/2017</span>
-									Magister Inzynier, Politechnika Poznańska, <br />Zarządzanie i
-									Inżynieria Produkcji, spec. Zarządzanie jakością,
-								</li>
-								<h2 class="skills__subtitle-course">Kursy</h2>
-								<span class="course__date">Udemy:</span>
-								<li class="course">
-                  - Build Responsive Real-World Websites with HTML and CSS,<br />
-									- Advanced CSS and Sass: Flexbox, Grid, Animations and
-									More!,<br />
-									- The Modern Javascript Bootcamp Course,<br />
-									- Modern React with Redux,<br />
-								</li>
-							</ul>
-						</div>
-						<div class="skills__padding">
-              <h2 class="skills__subtitle">Skills</h2>
-							<div class="skills__data">
-                <div class="skills__names">
-									<span class="skills__name">HTML5</span>
+							<div class="cntr-grid">
+								<h2 class="skills__subtitle">Edukacja</h2>
+								<ul class="skills__courses">
+									<li class="course mbsmall">
+										<span class="course__date">03/2022 - Obecnie</span>
+										Studia podyplomowe, Akademia Leona Koźmińskiego,
+										<br />Frontend Development z React - Online,
+									</li>
+									<li class="course mbsmall">
+										<span class="course__date">10/2012 - 07/2017</span>
+										Magister Inzynier, Politechnika Poznańska, <br />Zarządzanie i
+										Inżynieria Produkcji, spec. Zarządzanie jakością,
+									</li>
+								</ul>
+							</div>
+
+							<div class="cntr-grid grid__row-2">
+								<h2 class="skills__subtitle">Kursy</h2>
+								<ul class="skills__courses">
+									<li class="course">
+										<span class="course__date">Udemy:</span>
+										- Build Responsive Real-World Websites with HTML and CSS,<br />
+										- Advanced CSS and Sass: Flexbox, Grid, Animations and
+										More!,<br />
+										- The Modern Javascript Bootcamp Course,<br />
+										- Modern React with Redux,<br />
+									</li>
+								</ul>
+							</div>
+						
+
+							<div class="cntr">
+								<h2 class="skills__subtitle">Skills</h2>
+								<div class="skills__data">
+									<div class="skills__names">
+										<span class="skills__name">HTML5</span>
+									</div>
+									<div class="skills__bar skills__html"></div>
+									<div>
+										<span class="skills__percentage">90%</span>
+									</div>
 								</div>
-								<div class="skills__bar skills__html"></div>
-								<div>
-									<span class="skills__percentage">90%</span>
+								<div class="skills__data">
+									<div class="skills__names">
+										<span class="skills__name">CSS3</span>
+									</div>
+									<div class="skills__bar skills__css"></div>
+									<div>
+										<span class="skills__percentage">70%</span>
+									</div>
+								</div>
+								<div class="skills__data">
+									<div class="skills__names">
+										<span class="skills__name">JAVASCRIPT</span>
+									</div>
+									<div class="skills__bar skills__js"></div>
+									<div>
+										<span class="skills__percentage">65%</span>
+									</div>
+								</div>
+								<div class="skills__data">
+									<div class="skills__names">
+										<span class="skills__name">REACT</span>
+									</div>
+									<div class="skills__bar skills__react"></div>
+									<div>
+										<span class="skills__percentage">50%</span>
+									</div>
 								</div>
 							</div>
-							<div class="skills__data">
-                <div class="skills__names">
-									<span class="skills__name">CSS3</span>
+
+							<div class="cntr">
+								<h2 class="skills__subtitle">Język</h2>
+								<div class="skills__data">
+                	<div class="skills__names">
+										<span class="skills__name">Angielski B2</span>
+									</div>
+									<div class="skills__bar skills__ang"></div>
+									<div>
+                  	<span class="skills__percentage">70%</span>
+									</div>
 								</div>
-								<div class="skills__bar skills__css"></div>
-								<div>
-                  <span class="skills__percentage">70%</span>
-								</div>
-							</div>
-							<div class="skills__data">
-                <div class="skills__names">
-									<span class="skills__name">JAVASCRIPT</span>
-								</div>
-								<div class="skills__bar skills__js"></div>
-								<div>
-                  <span class="skills__percentage">65%</span>
-								</div>
-							</div>
-							<div class="skills__data">
-                <div class="skills__names">
-									<span class="skills__name">REACT</span>
-								</div>
-								<div class="skills__bar skills__react"></div>
-								<div>
-                  <span class="skills__percentage">50%</span>
-								</div>
-							</div>
-							<h2 class="skills__subtitle-language">Język</h2>
-							<div class="skills__data">
-                <div class="skills__names">
-									<span class="skills__name">Angielski B2</span>
-								</div>
-								<div class="skills__bar skills__ang"></div>
-								<div>
-                  <span class="skills__percentage">70%</span>
-								</div>
-							</div>
-						</div>
+							<div>
 					</div>
 				</section>
+
 				<div class="jobTitleContainer lower">
-          <h2 class="jobTitle">i designer</h2>
+					<img src="img/react-2.svg" alt="react" class="img__logo jobTitle" />
+					<img src="img/javascript-1.svg" alt="react" class="img__logo jobTitle" />
+					<img src="img/css-3.svg" alt="react" class="img__logo jobTitle" />
+					<img src="img/html-1.svg" alt="react" class="img__logo jobTitle" />
 				</div>
-			</div>
     
     <section id="projects">
+
       <div class="projects">
-        <h1 class="projects__title">Moje projekty</h1>
 				<div class="project project--1">
-          <div class="phone">
+					<div class="phone">
             <img src="./img/phone.png" alt="phone" class="phone__img" />
 						<div class="phone__screen">
               <img src="./img/footInScore.png" alt="app" class="phone__app" />
@@ -213,31 +226,34 @@
 					<div class="project__detail">
             <h1 class="project__title">FootInScore</h1>
 						<p class="project__description">
-              Moja pierwsza aplikacja na wzór aplikacji "flashscore", na której trenowałem praktyczne zastosowanie Reacta, Reduxa czy React Hooków. <br><br>
+              Moja pierwsza aplikacja na wzór aplikacji "flashscore", na której trenowałem praktyczne zastosowanie Reacta, Reduxa czy React Hooków. <br>
 							<span class="bold__text">
 								HTML, CSS, REACT
 							</span>
 						</p>
 					</div>
+					<a href="https://github.com/radoslaw-macioszek" class="project__btn">Sprawdź to!</a>
 				</div>
         
 				<div class="project project--2">
-          <div class="laptop">
-            <img src="./img/laptop.png" alt="laptop" class="laptop__img" />
-						<div class="laptop__screen">
-							<img src="./img/KibicPoznanski.png" alt="app" class="laptop__app" />
-						</div>
-					</div>
 					<div class="project__detail">
-            <h1 class="project__title">KibicPoznanski</h1>
+            <h1 class="project__title">KibicPiłkarski</h1>
 						<p class="project__description">
-							Projekt strony internetowej, na której użytkownik mógłby dowiedzieć się o klubowych aktualnościach, przeczytać opinie ekspertów wyświetlane przy pomocy slidera oraz zapisać się do członkostwa poprzez wyskakujący modal i znajdujący się w nim formularz. <br> <br>
-		<span class="bold__text">
-			HTML, CSS, JS
-		</span>
+							Projekt strony internetowej, na której użytkownik mógłby dowiedzieć się o klubowych aktualnościach, przeczytać opinie ekspertów wyświetlane przy pomocy slidera oraz zapisać się do członkostwa poprzez wyskakujący modal i znajdujący się w nim formularz. <br>
+						<span class="bold__text">
+								HTML, CSS, JS
+						</span>
 						</p>
 					</div>
+					<div class="laptop">
+						<img src="./img/laptop.png" alt="laptop" class="laptop__img" />
+						<div class="laptop__screen">
+							<img src="./img/KibicPilkarski.png" alt="Page about sport" class="laptop__app" />
+						</div>
+					</div>
+					<a href="https://github.com/radoslaw-macioszek" class="project__btn mg-top">Sprawdź to!</a>
 				</div>
+				
 
 				<div class="project project--3">
 					<div class="phone">
@@ -249,15 +265,16 @@
 					<div class="project__detail">
             <h1 class="project__title">"Mięśniówka"</h1>
 						<p class="project__description">
-              Aplikacja w formie ToDo Listy, na której użytkownik może wyszukać pobrane z API ćwiczenie, przeczytać o nich, obejrzeć film instruktażowy, a nastepnie dodać do wybranego dnia tygodnia. Aplikacja wciąż w trakcie budowy. <br> <br>
+              Aplikacja w formie ToDo Listy, na której użytkownik może wyszukać pobrane z API ćwiczenie, przeczytać o nich, obejrzeć film instruktażowy, a nastepnie dodać do wybranego dnia tygodnia. Aplikacja wciąż w trakcie budowy. <br>
 							<span class="bold__text">
 								HTML, CSS, REACT
 							</span>
 						</p>
 					</div>
+					<a href="https://github.com/radoslaw-macioszek" class="project__btn">Sprawdź to!</a>
 				</div>
+				<h1 class="projects__title">Moje projekty</h1>	
 			</div>
-			
 			</div>
     </section>
     
@@ -280,8 +297,6 @@
 						<span>Dec</span>
 					</div>
 					<div class="box__container"></div>
-					<h1 class="github__title">NA GITHUB</h1>
-          <span class="github__span">albo</span>
 				</div>
 			</div>
 		</div>
@@ -289,12 +304,13 @@
     
 		<footer class="footer">
 			<div class="footer__container">
-				<h2 class="footer__title">Kontakt</h2>
+				<h2 class="footer__title">Skontaktuj się!</h2>
 				<div class="footer__row">
 					<ul class="footer-list">
 						<li class="footer-list__item">Radosław Macioszek</li>
 						<li class="footer-list__item">radmacioszek@gmail.com</li>
 						<li class="footer-list__item">tel. +48 783 075 856</li>
+						<li class="footer-list__item item__display"><a class="github__link" href="https://github.com/radoslaw-macioszek">github.com/radoslaw-macioszek</a></li>
 					</ul>
 				</div>
 			</div>

@@ -41,5 +41,9 @@ window.addEventListener("scroll", () => {
 	jobTitleContainer[1].style.backgroundPositionY = `${-offsetY * 0.5}px`;
 	jobTitle[0].style.transform = `translateX(calc(210vh - ${offsetY}px))`;
 	jobTitle[1].style.transform = `translateX(calc(-160vh + ${offsetY}px))`;
-	projectsTitle.style.transform = `translateY(calc(310vh - ${offsetY}px))`;
+	jobTitle[2].style.transform = `translateX(calc(-160vh + ${offsetY}px))`;
+	// jobTitle[3].style.transform = `translateX(calc(-100vh + ${offsetY}px))`;
+	jobTitle[3].style.transform = `translateX(calc(-160vh + ${offsetY}px))`;
+	jobTitle[4].style.transform = `translateX(calc(-160vh + ${offsetY}px))`;
+	projectsTitle.style.transform = `translateY(calc(350vh - ${offsetY}px))`;
 });
